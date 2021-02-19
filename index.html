@@ -1,0 +1,10 @@
+you can see the problem when you try to install some tool in kali linux:
+The following packages have unmet dependencies:
+ gsettings-desktop-schemas : Breaks: mutter (< 3.31.4) but 3.30.1-1 is to be installed
+ libc6-dev : Breaks: libgcc-8-dev (< 8.4.0-2~) but 8.2.0-7 is to be installed
+ python3-tornado : Breaks: mitmproxy (< 5.0~) but 4.0.4-4kali1 is to be installed
+E: Error, pkgProblemResolver::Resolve generated breaks, this may be caused by held packages.
+Reason: some installation packages are no longer needed. You can see information of installed packages in /var/lib/dpkg/status
+Resolve: 
+go to /var/lib/dpkg/status
+clear all
